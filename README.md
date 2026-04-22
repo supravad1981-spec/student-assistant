@@ -1,36 +1,69 @@
-# Smart Student Productivity Assistant
+# 🚀 Smart AI Student Productivity Assistant
 
-## 🚀 Overview
-This project is a simple AI-inspired assistant that helps students create a study plan based on available days and subjects.
+## 📌 Overview
+This project is an AI-powered Smart Student Assistant designed to help students generate optimized study plans based on available time, subjects, and priorities. It uses intelligent decision-making and Google Gemini API to provide dynamic and practical study strategies.
 
-## 🎯 Chosen Vertical
-Education / Productivity
+---
+
+## 🎯 Chosen Challenge
+Election Process Education (Adapted to Educational Productivity & Planning)
+
+---
 
 ## 🧠 Approach & Logic
-The system takes input such as number of days and subjects, then generates a structured study plan using basic logic.
+The system takes user input such as:
+- Number of days available
+- Subjects to study
 
-It distributes subjects across days to ensure balanced preparation.
+It then:
+- Uses AI (Google Gemini API) to analyze the input
+- Generates a structured and optimized study plan
+- Provides time allocation, prioritization, and tips
+
+This ensures dynamic, context-aware decision-making rather than static outputs.
+
+---
 
 ## ⚙️ How It Works
-1. User sends input (days + subjects)
-2. Backend processes the data
-3. Generates a study plan
-4. Returns output in JSON format
+1. User sends input via API (days + subjects)
+2. Backend processes input using Flask
+3. Prompt is sent to Gemini API
+4. AI generates a smart study plan
+5. Response is returned in JSON format
+
+---
 
 ## ☁️ Google Services Used
-- Google Cloud Run (for deployment)
+- Google Gemini API (AI-based content generation)
+- (Optional) Google Cloud Run (for deployment)
 
-## 📌 Assumptions
-- User provides correct number of days
-- Subjects list is valid
-- Focus is on basic planning
+---
 
 ## ✅ Features
-- Simple study planner
-- Easy to use API
-- Fast response
+- AI-powered smart assistant using Google Gemini API
+- Dynamic and context-aware study plan generation
+- REST API-based backend
+- Real-time intelligent responses
+- Simple and scalable design
+
+---
 
 ## 🛠️ Tech Stack
 - Python (Flask)
-- Docker
-- Google Cloud Run
+- Requests (API handling)
+- Google Gemini API
+- Docker (for deployment)
+- Google Cloud Run (optional deployment)
+
+---
+
+## 📌 API Endpoint
+
+### POST /plan
+
+#### Request Body:
+```json
+{
+  "days": 3,
+  "subjects": ["Math", "Physics", "Chemistry"]
+}

@@ -1,5 +1,8 @@
 # 🚀 Smart AI Student Productivity Assistant
 
+## 🔄 Update
+This project has been enhanced with AI (Google Gemini API) after initial submission to improve smart decision-making capabilities.
+
 ## 📌 Overview
 This project is an AI-powered Smart Student Assistant designed to help students generate optimized study plans based on available time, subjects, and priorities. It uses intelligent decision-making and Google Gemini API to provide dynamic and practical study strategies.
 
